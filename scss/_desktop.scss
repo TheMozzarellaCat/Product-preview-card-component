@@ -1,0 +1,99 @@
+@use 'variables' as *;
+
+@media screen and (min-width: 1440px){
+    
+.background-container{
+    height: 50vh;
+    width: 45%;
+    margin: 20vh 5%;
+    background-color: $white;
+    border-radius: 15px;
+    display: flex;
+    .picture-container{
+        width: 100%;
+        height: 50vh;
+        background-image: url(/images/image-product-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .description-container{
+        width: 80%;
+        padding: 4vh;
+        box-sizing: border-box;
+        .product-container{
+            .product-name{
+                color: $dark-grayish-blue;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-family: $montserrat;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .product-title{
+                color: $very-dark-blue;
+                font-family: $fraunces;
+                font-size: 36px;
+                font-weight: 700;
+                margin-top: 1vh;
+                margin-bottom: 2vh;
+                line-height: 45px;
+            }
+            .product-description{
+                color: $dark-grayish-blue;
+                font-family: $montserrat;
+                font-size: 14px;
+                font-weight: 500;
+                word-spacing: 3px;
+                line-height: 20px;
+            }
+        }
+        .price-container{
+            margin-top: 1.5vh;
+            display: flex;
+            .price-discounted{
+                color: $dark-cayn;
+                font-family: $fraunces;
+                font-size: 40px;
+                font-weight: 700;
+            }
+            .price-normal{
+                color: $dark-grayish-blue;
+                font-family: $montserrat;
+                font-size: 16px;
+                font-weight: 500;
+                text-decoration: line-through;
+                margin-top: 2vh;
+                margin-left: 1vw;
+            }
+        }
+        .button-container{
+            width: 100%;
+            background-color: $dark-cayn;
+            border-radius: 5px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            color: white;
+            margin-top: 3vh;
+            margin-bottom: 1vh;
+            transition: 1s ;
+            &:active{
+                filter: brightness(50%);
+            }
+            .shoping-cart-icon{
+                background-image: url(/images/icon-cart.svg);
+                height: 14px;
+                width: 14px;
+                margin-right: 2vw;
+            }
+        }
+    }
+}
+}

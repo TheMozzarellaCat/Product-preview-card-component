@@ -1,0 +1,91 @@
+@use 'variables' as *;
+body{
+    margin: 0px;
+    background-color: $creme;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-container{
+    height: 94vh;
+    width: 90%;
+    background-color: $white;
+    border-radius: 10px;
+    .picture-container{
+        width: 100%;
+        height: 25vh;
+        background-image: url(/images/image-product-mobile.jpg);
+        background-size: 100% 25vh;
+        background-repeat: no-repeat;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .description-container{
+        padding: 2vh;
+        box-sizing: border-box;
+        .product-container{
+            .product-name{
+                color: $dark-grayish-blue;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-family: $montserrat;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .product-title{
+                color: $very-dark-blue;
+                font-family: $fraunces;
+                font-size: 33px;
+                font-weight: 700;
+                margin-top: 0.5vh;
+                margin-bottom: 2vh;
+            }
+            .product-description{
+                color: $dark-grayish-blue;
+                font-family: $montserrat;
+                font-size: 14px;
+                font-weight: 500;
+                word-spacing: 1px;
+                line-height: 20px;
+            }
+        }
+        .price-container{
+            margin-top: 3vh;
+            display: flex;
+            .price-discounted{
+                color: $dark-cayn;
+                font-family: $fraunces;
+                font-size: 34px;
+                font-weight: 700;
+            }
+            .price-normal{
+                color: $dark-grayish-blue;
+                font-family: $montserrat;
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: line-through;
+                margin-top: 1vh;
+                margin-left: 4vw;
+            }
+        }
+        .button-container{
+            width: 100%;
+            background-color: $dark-cayn;
+            border-radius: 5px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $montserrat;
+            color: white;
+            .shoping-cart-icon{
+                background-image: url(/images/icon-cart.svg);
+                height: 14px;
+                width: 14px;
+                margin-right: 3vw;
+            }
+        }
+    }
+}
